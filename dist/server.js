@@ -12,6 +12,6 @@ var app = express_1.default();
 app.use(express_1.default.json());
 app.use(routes_1.default);
 dotenv_1.default.config();
-app.listen(3333, function () {
+app.listen(process.env.PORT || 3333, function () {
     console.log('🏃 Running Server on port :3333');
 });
