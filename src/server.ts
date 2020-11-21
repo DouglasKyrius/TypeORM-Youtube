@@ -12,5 +12,5 @@ app.use(routes);
 dotenv.config();
 
 app.listen(process.env.PORT || 3333, () => {
-  console.log('🏃 Running Server on port :3333');
+  console.log(`🏃 Running Server on port ${process.env.PORT}`);
 });
